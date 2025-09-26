@@ -1,0 +1,33 @@
+version: '3.8'  # Docker Compose file format version
+
+services:
+  web:
+    image: php:8.2-apache    # PHP Version
+    ports:
+      - "80:80"    # maps your PC port 80 to container port 80
+    depends_on:
+      - db    # links this container to the db container
+    volumes:
+      - ./html:/var/www/html    # maps ./html on your PC to /var/www/html in the container
+
+  db:
+    image: mysql:8.1.0    # MySQL version
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password    # change the MySQL root password
+      MYSQL_DATABASE: lamp_db               # change the database name
+      MYSQL_USER: your_username             # optional custom user
+      MYSQL_PASSWORD: your_password         # password for the custom user
+    volumes:
+      - ./mysql_data:/var/lib/mysql    # maps ./mysql_data on your PC to /var/lib/mysql in the container
+
+  phpmyadmin: 
+    image: phpmyadmin/phpmyadmin:latest
+    platform: linux/amd64   # avoids issues with MacOS and lab environments
+    restart: always 
+    depends_on:
+      - db
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: root_password
+    ports:
+      - "8080:80"
