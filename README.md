@@ -148,11 +148,6 @@ Please avoid committing sensitive credentials. Use placeholders like `MYSQL_ROOT
 
 ---
 
-## 🧾 License & Code of Conduct
-Add your preferred license file (e.g., `LICENSE`) and a short code of conduct if this repo will be used by many students or contributors.
-
----
-
 ## ❓ Questions / Help
 If you need help:
 - Ask your instructor or lab assistant.
