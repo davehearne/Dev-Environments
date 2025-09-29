@@ -4,7 +4,7 @@ services:
   web:
     image: php:8.2-apache    # PHP Version
     ports:
-      - "80:80"    # maps your PC port 80 to container port 80
+      - "80:8000"    # maps your PC port 80 to container port 8000 - fixes permission issues in the lab
     depends_on:
       - db    # links this container to the db container
     volumes:
