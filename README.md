@@ -121,17 +121,6 @@ services:
 
 ---
 
-## 📷 Diagram (Visual)
-You can add a diagram to the repo (for example `assets/lamp-diagram.png`) and embed it in each environment README:
-
-```markdown
-![LAMP Architecture](assets/lamp-diagram.png)
-```
-
-If you want, I can export the diagram image for you and provide a download link or a file to add to the repo.
-
----
-
 ## 👩‍💻 Contributing
 Students and instructors are encouraged to add or improve environments:
 
