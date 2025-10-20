@@ -2,7 +2,7 @@ version: '3.8'  # Docker Compose file format version
 
 services:
   web:
-    image: php:8.2-apache    # PHP Version
+    build: ./php    # PHP Version
     ports:
       - "8000:80"    # maps your PC port 80 to container port 8000 - fixes permission issues in the lab
     depends_on:
