@@ -1,4 +1,4 @@
-# WordPress + Docker Compose (Copy-Friendly)
+# WordPress + Docker Compose
 
 A lightweight **WordPress development setup** using **Docker Compose**.  
 Designed to be quick to copy, paste, and adapt for local development, demos, or teaching environments.
