@@ -16,19 +16,21 @@ Includes:
 - Docker  
 - Docker Compose  
 
+---
+
 Check installation:
 
 ```bash
 docker --version
 docker compose version
-
+```
 ## Quick Start 
 
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 docker compose up -d
-
+```
 ### Open in your Browser
 
 http://localhost:8080
